@@ -26,15 +26,19 @@ Exceed Dock Limit: Absolute number of "Parking - Hiring" exeeds total docks in s
 
 # Data Structure
 The database structure as seen below consists of three tables; Bike, Station, and Weather with a total row count of 83M. 
-Most of data prepation and data analysis were conducted in BigQuery using SQL query.
 
 <img src="Entity%20Relational%20Diagram%20screenshot_Share%20Cycle%20Analysis_.png" alt="Entity Relational Diagram Screenshot" width="75%">
 
 Most of data prepation and analysis were conducted in BigQuery using SQL query.  
 The SQL queries utilized to clean, organize, and prepare data for the dashboard can be found [here](./london_cycle_analysis.sql).
 
+# Executive Summary
+Since 2015, the number of bike hires has shown a slight increase over three years, with a year-over-year (YoY) growth rate of 102%. However, this was followed by two consecutive years of YoY declines at -1%. The highest number of hires was recorded in 2022 (11M).  
 
+Bike hires occur throughout the year, but their frequency is positively correlated with temperature rises and negatively correlated with temperature drops. As a result, the peak hiring period is during the summer, while winter sees a decline in hires.  
+On weekdays, peak hiring and parking times align with commuting hours — morning arrivals at work and evening returns home. In the morning, bikes are predominantly hired in Zones 1 and 2 and parked in central London, particularly between 7:00 AM and 8:00 AM. Conversely, in the evening, bikes are hired in central London (City of London, Westminster, and Kensington) and parked back in Zones 1 and 2.  
 
+Regarding bike and dock station availability, six locations experienced fully occupied dock stations with no available parking over 100 times in 2016. Similarly, three locations faced a lack of available bikes over 100 times. These "no availability" issues were concentrated in specific dock stations, indicating that addressing these locations would significantly improve operational efficiency.
 
 
 
