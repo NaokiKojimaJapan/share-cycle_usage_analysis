@@ -13,7 +13,7 @@ Insights and recommendations are provided on the following key areas.
 - Usage pattern in seven different weather conditions.
 - Dock stations of which is lack of both available bike hirings and available parking docks.
 
-Using large volumn datasets with total column of 83M, most of data expolring, cleaning, preparation and analysis were done in BigQuery environment using SQL query. Only selected data and tables were imported in Tableau for visualization.  
+Using large volumn datasets with total column of 83M, most of data expolring, cleaning, preparation and analysis were done in BigQuery environment using SQL query. Only selected data and tables were imported in Tableau for visualization. 
 
 An interactive Tableau dashboard can be downloaded [here](https://public.tableau.com/app/profile/naoki.kojima/viz/london_cycle/Dashboard1?publish=yes).  
 
