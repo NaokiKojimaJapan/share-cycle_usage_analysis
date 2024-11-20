@@ -13,6 +13,8 @@ Insights and recommendations are provided on the following key areas.
 - Usage pattern in seven different weather conditions.
 - Dock stations of which is lack of both available bike hirings and available parking docks.
 
+Using large volumn datasets with total column of 83M, most of data expolring, cleaning, preparation and analysis were done in BigQuery environment using SQL query. Only selected data and tables were imported in Tableau for visualization.  
+
 An interactive Tableau dashboard can be downloaded [here](https://public.tableau.com/app/profile/naoki.kojima/viz/london_cycle/Dashboard1?publish=yes).  
 
 # North Star Metrics and Dimensions
@@ -24,9 +26,11 @@ Exceed Dock Limit: Absolute number of "Parking - Hiring" exeeds total docks in s
 
 # Data Structure
 The database structure as seen below consists of three tables; Bike, Station, and Weather with a total row count of 83M.   
-![Entity Relational Diagram Screenshot](Entity Relational Diagram screenshot_Share Cycle Analysis_.png)
 
-The SQL queries utilized to clean, organize, and prepare data for the dashboard can be found [here]().
+<img src="Entity%20Relational%20Diagram%20screenshot_Share%20Cycle%20Analysis_.png" alt="Entity Relational Diagram Screenshot" width="75%">
+
+The SQL queries utilized to clean, organize, and prepare data for the dashboard can be found [here](./london_cycle_analysis.sql).
+
 
 
 
