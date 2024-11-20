@@ -38,7 +38,42 @@ Since 2015, the number of bike hires has shown a slight increase over three year
 Bike hires occur throughout the year, but their frequency is positively correlated with temperature rises and negatively correlated with temperature drops. As a result, the peak hiring period is during the summer, while winter sees a decline in hires.  
 On weekdays, peak hiring and parking times align with commuting hours — morning arrivals at work and evening returns home. In the morning, bikes are predominantly hired in Zones 1 and 2 and parked in central London, particularly between 7:00 AM and 8:00 AM. Conversely, in the evening, bikes are hired in central London (City of London, Westminster, and Kensington) and parked back in Zones 1 and 2.  
 
-Regarding bike and dock station availability, six locations experienced fully occupied dock stations with no available parking over 100 times in 2016. Similarly, three locations faced a lack of available bikes over 100 times. These "no availability" issues were concentrated in specific dock stations, indicating that addressing these locations would significantly improve operational efficiency.
+Regarding bike and dock station availability, six locations experienced fully occupied dock stations with no available parking over 100 times in 2016. Similarly, three locations faced a lack of available bikes over 100 times. These "no availability" issues were concentrated in specific dock stations, indicating that addressing these locations would significantly improve operational efficiency.  
+
+[Here](https://public.tableau.com/app/profile/naoki.kojima/viz/london_cycle/Dashboard1?publish=yes) is the usage overview page from Tableau dashboard.  
+[Here](https://public.tableau.com/app/profile/naoki.kojima/viz/exceed_dock/Dashboard1?publish=yes) is the map and list of stations exceeding hiring and parking limits from Tableau dashboard. 
+
+<img src="Hire Count vs Growth Rate 2015-2023 .png" alt="Hire Count vs Growth Rate 2015-2023" width="50%"><img src="Hire Count vs Avg Tempture 2015-2023.png" alt="Hire Count vs Avg Tempture 2015-2023" width="50%">  
+
+<img src="HeatMap_Hiring.png" alt="HeatMap_Hiring" width="50%"><img src="HeatMap_Parking.png" alt="HeatMap_Parking" width="50%">  
+
+<img src="Day Count for Exceeding Dock Limit 2016.png" alt="Day Count for Exceeding Dock Limit 2016" width="50%">
+
+# Summary of Insights
+## 1. Lack of Bikes: Structure and Root Cause
+- The three dock stations in Waterloo Station are the top locations where number of hiring exceed parking. What happening here is low hiring and high parking in the morning, on the other hand, high hiring and low parking in the evening as the chart bewlow shows. However the real problem is high volumn of hiring in the evening exceed that of parking in the morning.
+- It is assumed that most of users in the morning are commuter from Waterloo Station and going to workplace in the City of London. It might be almost same users who park in the three dock stations.
+- When they go to office from Waterloo Station they can use bikes down to the last one in each three dock stations, but when they return from office to Waterloo Station, they uncure if the three dock stations are available for parking. (It might happen in some cases when they go office as the second insights shown below, however their offices are separately located, so it's not case for all commuters.)
+- This might make some of them hesitate to use the share cycle when they return to Waterloo Station and cause lack of available bikes.
+
+   |            | Hiring     | Parking    |
+   |------------|------------|------------|
+   | Morning    | high       | low        |
+   | Evening    | low        | high       |
+
+<img src="Waterloo Station_Hiring.png" alt="Waterloo Station_Hiring" width="50%"><img src="Waterloo Station_Parking.png" alt="Waterloo Station_Parking" width="50%">
+
+## 2. Lack of Dock Stations: Structure and Root Cause
+- The top dock staions where number of parking exceed that of hiring locate in the City of London. A lot of people come from suburb in the morning and return in the evening, so number of parking is high in the morning and that of hiring in the evening is also high.
+- As shown the first insight, the real problem is number of parking in the morning is higher than that of hiring in the evening. There might be several reason, for instance, they might go dring with co-workers or as shown the first insight they are unsure to sesure available dock stations near stations.
+- Because of these conditions, dock stations can be full with parked bikes and not available additional parking.
+
+   |            | Hiring     | Parking    |
+   |------------|------------|------------|
+   | Morning    | low        | high       |
+   | Evening    | high       | low        |
+
+<img src="CityOfLondon_Hiring.png" alt="CityOfLondon_Hiring" width="50%"><img src="CityOfLondon_Parking.png" alt="CityOfLondon_Parking" width="50%">
 
 
 
