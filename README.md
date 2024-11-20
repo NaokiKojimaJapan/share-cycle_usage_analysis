@@ -25,10 +25,12 @@ Location: 789 dock stations in the city of London
 Exceed Dock Limit: Absolute number of "Parking - Hiring" exeeds total docks in stations meaning not available for eitehr parking bikes or hiring bikes. Showing plus in means Parking exceeds Hiring, and minus means Hiring exceeds Parking.  
 
 # Data Structure
-The database structure as seen below consists of three tables; Bike, Station, and Weather with a total row count of 83M.   
+The database structure as seen below consists of three tables; Bike, Station, and Weather with a total row count of 83M. 
+Most of data prepation and data analysis were conducted in BigQuery using SQL query.
 
 <img src="Entity%20Relational%20Diagram%20screenshot_Share%20Cycle%20Analysis_.png" alt="Entity Relational Diagram Screenshot" width="75%">
 
+Most of data prepation and analysis were conducted in BigQuery using SQL query.  
 The SQL queries utilized to clean, organize, and prepare data for the dashboard can be found [here](./london_cycle_analysis.sql).
 
 
